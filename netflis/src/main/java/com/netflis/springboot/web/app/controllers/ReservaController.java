@@ -30,7 +30,6 @@ public class ReservaController {
 			return "redirect:/table/user-table";
 		}
 		
-		
 		return "forms/factura-form";
 	
 	}
