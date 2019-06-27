@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts/admin-layout :: head"></head>
+<body>
+	<header th:replace="layouts/admin-layout :: header"></header>
+	<div class="container">
+
+		<h1
+			class="text-secondary border border-success border-top-0 border-left-0 border-right-0"
+			th:text="${titulo}"></h1>
+		<a th:href="@{/admin/movie-form}" class="btn btn-success btn-xs">Crear pelicula</a>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>nombre</th>
+					<th>duracion</th>
+					<th>estreno</th>
+					<th>genero</th>
+					<th>formato</th>
+					<th>idioma</th>
+					<th>estado</th>
+					<th>create at</th>
+					<th>Editar</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr th:each="pelicula: ${peliculas}">
+					<td th:text="${pelicula.nombre}"></td>
+					<td th:text="${pelicula.duracion}"></td>
+					<td th:text="${pelicula.estreno}"></td>
+					<td th:text="${pelicula.genero}"></td>
+					<td th:text="${pelicula.formato}"></td>
+					<td th:text="${pelicula.idioma}"></td>
+					<td th:text="${pelicula.estado}"></td>
+					<td th:text="${pelicula.createAt}"></td>		
+					<td><a class="btn btn-primary btn-xs" th:href="@{/admin/movie-form/} + ${pelicula.idPelicula}" th:text="'editar'"></a></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	<footer th:replace="layouts/admin-layout :: footer"></footer>
+</body>
+</html>
