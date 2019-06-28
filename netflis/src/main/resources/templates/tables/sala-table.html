@@ -10,7 +10,7 @@
 			th:text="${titulo}"></h1>
 		<a th:href="@{/admin/sala-form}" class="btn btn-danger btn-xs">CREAR SALA</a>
 		<table class="table table-striped">
-			<thead>
+			<thead class="thead-light">
 				<tr>
 					<th>NOMBRE</th>
 					<th>#ASIENTO</th>
@@ -26,7 +26,7 @@
 					<td th:text="${sala.nAsiento}"></td>
 					<td th:text="${sala.estado}"></td>
 					<td th:text="${sala.createAt}"></td>		
-					<td><a class="btn btn-primary btn-xs" th:href="@{/admin/sala-form/} + ${sala.idSala}" th:text="'editar'"></a></td>
+					<td><a class="btn btn-secondary btn-xs" th:href="@{/admin/sala-form/} + ${sala.idSala}" th:text="'editar'"></a></td>
 				</tr>
 
 			</tbody>

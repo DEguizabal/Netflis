@@ -13,7 +13,7 @@
 				</h4>
 
 				<table class="table table-striped">
-					<thead class="thead-dark">
+					<thead class="thead-light">
 						<tr>
 							<th>NOMBRE</th>
 							<th>APELLIDO</th>
@@ -41,7 +41,7 @@
 							<td th:text="${usuario.edad}"></td>
 							<td th:text="${usuario.createAt}"></td>
 							<td th:text="${usuario.estado}"></td>
-							<td><a class="btn btn-primary btn-xs"
+							<td><a class="btn btn-secondary btn-xs"
 								th:href="@{/admin/user-form/} + ${usuario.idUsuario}"
 								th:text="'editar'"></a></td>
 						</tr>

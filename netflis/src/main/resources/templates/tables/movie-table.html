@@ -10,7 +10,7 @@
 			th:text="${titulo}"></h1>
 		<a th:href="@{/admin/movie-form}" class="btn btn-danger btn-xs">CREAR PELICULA</a>
 		<table class="table table-striped">
-			<thead>
+			<thead class="thead-light">
 				<tr>
 					<th>NOMBRE</th>
 					<th>DURACION</th>
@@ -34,7 +34,7 @@
 					<td th:text="${pelicula.idioma}"></td>
 					<td th:text="${pelicula.estado}"></td>
 					<td th:text="${pelicula.createAt}"></td>		
-					<td><a class="btn btn-primary btn-xs" th:href="@{/admin/movie-form/} + ${pelicula.idPelicula}" th:text="'editar'"></a></td>
+					<td><a class="btn btn-secondary btn-xs" th:href="@{/admin/movie-form/} + ${pelicula.idPelicula}" th:text="'editar'"></a></td>
 				</tr>
 
 			</tbody>

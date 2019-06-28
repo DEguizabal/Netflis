@@ -10,7 +10,7 @@
 			th:text="${titulo}"></h1>
 		<a th:href="@{/admin/proyeccion-form}" class="btn btn-danger btn-xs">CREAR PROYECCION</a>
 		<table class="table table-striped">
-			<thead>
+			<thead class="thead-light">
 				<tr>
 					<th>PELICULA</th>
 					<th>SALA</th>
@@ -34,7 +34,7 @@
 					<td th:text="${proyeccion.createAt}"></td>	
 					<td th:text="${proyeccion.modifiedAt}"></td>	
 					<td th:text="${proyeccion.estado}"></td>	
-					<td><a class="btn btn-primary btn-xs" th:href="@{/admin/proyeccion-form/} + ${proyeccion.idProyeccion}" th:text="'editar'"></a></td>
+					<td><a class="btn btn-secondary btn-xs" th:href="@{/admin/proyeccion-form/} + ${proyeccion.idProyeccion}" th:text="'editar'"></a></td>
 				</tr>
 
 			</tbody>
