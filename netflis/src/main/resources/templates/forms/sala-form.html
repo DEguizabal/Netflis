@@ -15,7 +15,7 @@
 		<form th:action="@{/admin/sala-form}" th:object="${sala}"
 			method="post">
 			<div class="form-group row">
-				<label class="col-sm-2 col-form-label">Nombre</label>
+				<label class="col-sm-2 col-form-label">NOMBRE</label>
 				<div class="col-sm-6">
 					<input type="text" th:field="*{nombre}" class="form-control"
 						th:errorclass="'form-control alert-danger'" /> <small
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="form-group row">
-				<label class="col-sm-2 col-form-label">nAsiento</label>
+				<label class="col-sm-2 col-form-label">#ASIENTOS</label>
 				<div class="col-sm-6">
 					<input type="text" th:field="*{nAsiento}" class="form-control"
 						th:errorclass="'form-control alert-danger'" /> <small
@@ -34,7 +34,7 @@
 			</div>
 			
 			<div class="form-group row">
-				<label class="col-sm-2 col-form-label">Estado</label>
+				<label class="col-sm-2 col-form-label">ESTADO</label>
 				<div class="col-sm-6">
 					<input type="text" th:field="*{estado}" class="form-control"
 						th:errorclass="'form-control alert-danger'" /> <small
